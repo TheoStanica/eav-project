@@ -44,5 +44,9 @@ namespace eav_project {
                 
             }
         }
+
+        private void SellTicket_Load(object sender, EventArgs e) {
+
+        }
     }
 }

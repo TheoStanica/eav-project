@@ -26,12 +26,11 @@ namespace eav_project {
 
             webBrowser1.Navigate("https://google.com/maps/place/romania");
             webBrowser1.ScriptErrorsSuppressed = true;
-
-            txtTicketTitle.Enabled = false;
-            txtTicketLocation.Enabled = false;
-            txtTicketPrice.Enabled = false;
-            txtTicketSoldBy.Enabled = false;
-            txtTicketDate.Enabled = false;
+            txtTicketTitle.ReadOnly = true;
+            txtTicketLocation.ReadOnly = true;
+            txtTicketPrice.ReadOnly = true;
+            txtTicketSoldBy.ReadOnly = true;
+            txtTicketDate.ReadOnly = true;
             btnBuy.Enabled = false;
         }
 
@@ -49,7 +48,7 @@ namespace eav_project {
 
         public void SearchTicket() {
             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;" + "Initial Catalog=eav-project;Integrated Security=SSPI;");
-            SqlCommand cmd = new SqlCommand("SELECT tickets.* FROM tickets WHERE ticket_title LIKE '%"+txtSearch.Text+ "%'", conn);
+            SqlCommand cmd = new SqlCommand("SELECT tickets.* FROM tickets WHERE ticket_title LIKE '%"+txtSearch.Text+ "%' and order_id IS NULL", conn);
             
             SqlDataAdapter sa = new SqlDataAdapter(cmd);
             conn.Open();
@@ -112,8 +111,8 @@ namespace eav_project {
                 txtTicketPrice.Text = Convert.ToString(dt.Rows[index]["ticket_price"]);
                 txtTicketDate.Text = Convert.ToString(dt.Rows[index]["ticket_date"]);
                 txtTicketLocation.Text = Convert.ToString(dt.Rows[index]["ticket_location"]);
-                //  txtTicketSoldBy.Text = getUsernameFromID(dt.Rows[index]["user_id"].ToString());
-                txtTicketSoldBy.Text = Convert.ToString(dt.Rows[index]["user_name"]);
+                txtTicketSoldBy.Text = getUsernameFromID(dt.Rows[index]["user_id"].ToString());
+               // txtTicketSoldBy.Text = Convert.ToString(dt.Rows[index]["user_name"]);
                 webBrowser1.Navigate("https://google.com/maps/place/" + Convert.ToString(dt.Rows[index]["ticket_location"]));
                 ticketId = Convert.ToString(dt.Rows[index]["ticket_id"]);
                 btnBuy.Enabled = true;
@@ -176,6 +175,10 @@ namespace eav_project {
             ClearAll();
             LoadData();
             ShowTickets();
+        }
+
+        private void Tickets_Load(object sender, EventArgs e) {
+
         }
     }
 }

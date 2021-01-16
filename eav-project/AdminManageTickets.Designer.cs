@@ -48,6 +48,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.MultiSelect = false;
@@ -62,6 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(12, 300);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
@@ -72,6 +74,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(12, 336);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 20);
@@ -82,6 +85,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(12, 369);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 20);
@@ -92,6 +96,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(12, 401);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 20);
@@ -102,6 +107,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(350, 303);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 20);
@@ -112,6 +118,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(399, 339);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 20);
@@ -122,6 +129,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.label7.Location = new System.Drawing.Point(396, 371);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 20);
@@ -130,50 +138,68 @@
             // 
             // txtTicketID
             // 
+            this.txtTicketID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
+            this.txtTicketID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTicketID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTicketID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.txtTicketID.Location = new System.Drawing.Point(114, 300);
             this.txtTicketID.Name = "txtTicketID";
-            this.txtTicketID.Size = new System.Drawing.Size(230, 26);
+            this.txtTicketID.Size = new System.Drawing.Size(230, 19);
             this.txtTicketID.TabIndex = 8;
             // 
             // txtTicketTitle
             // 
+            this.txtTicketTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
+            this.txtTicketTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTicketTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTicketTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.txtTicketTitle.Location = new System.Drawing.Point(114, 336);
             this.txtTicketTitle.Name = "txtTicketTitle";
-            this.txtTicketTitle.Size = new System.Drawing.Size(230, 26);
+            this.txtTicketTitle.Size = new System.Drawing.Size(230, 19);
             this.txtTicketTitle.TabIndex = 9;
             // 
             // txtTicketPrice
             // 
+            this.txtTicketPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
+            this.txtTicketPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTicketPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTicketPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.txtTicketPrice.Location = new System.Drawing.Point(114, 368);
             this.txtTicketPrice.Name = "txtTicketPrice";
-            this.txtTicketPrice.Size = new System.Drawing.Size(230, 26);
+            this.txtTicketPrice.Size = new System.Drawing.Size(230, 19);
             this.txtTicketPrice.TabIndex = 10;
             // 
             // txtTicketLocation
             // 
+            this.txtTicketLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
+            this.txtTicketLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTicketLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTicketLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.txtTicketLocation.Location = new System.Drawing.Point(472, 300);
             this.txtTicketLocation.Name = "txtTicketLocation";
-            this.txtTicketLocation.Size = new System.Drawing.Size(316, 26);
+            this.txtTicketLocation.Size = new System.Drawing.Size(316, 19);
             this.txtTicketLocation.TabIndex = 11;
             // 
             // txtSoldBy
             // 
+            this.txtSoldBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
+            this.txtSoldBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoldBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoldBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.txtSoldBy.Location = new System.Drawing.Point(472, 336);
             this.txtSoldBy.Name = "txtSoldBy";
-            this.txtSoldBy.Size = new System.Drawing.Size(316, 26);
+            this.txtSoldBy.Size = new System.Drawing.Size(316, 19);
             this.txtSoldBy.TabIndex = 12;
             // 
             // txtOrderID
             // 
+            this.txtOrderID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(65)))), ((int)(((byte)(102)))));
+            this.txtOrderID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
             this.txtOrderID.Location = new System.Drawing.Point(472, 368);
             this.txtOrderID.Name = "txtOrderID";
-            this.txtOrderID.Size = new System.Drawing.Size(316, 26);
+            this.txtOrderID.Size = new System.Drawing.Size(316, 19);
             this.txtOrderID.TabIndex = 13;
             // 
             // dateTimePicker1
@@ -186,30 +212,37 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(276, 447);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 34);
             this.button1.TabIndex = 15;
             this.button1.Text = "Modify";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(214)))), ((int)(((byte)(0)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(386, 447);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 34);
             this.button2.TabIndex = 16;
             this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AdminManageTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(800, 493);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -230,6 +263,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "AdminManageTickets";
             this.Text = "AdminManageTickets";
+            this.Load += new System.EventHandler(this.AdminManageTickets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

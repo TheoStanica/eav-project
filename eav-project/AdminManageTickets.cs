@@ -115,5 +115,9 @@ namespace eav_project {
                 MessageBox.Show("Fields can not be empty!");
             }
         }
+
+        private void AdminManageTickets_Load(object sender, EventArgs e) {
+
+        }
     }
 }

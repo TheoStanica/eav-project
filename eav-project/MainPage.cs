@@ -20,7 +20,7 @@ namespace eav_project {
 
             getUserID();
 
-            label3.Text = userID.ToString();
+            
 
             if (!isAdmin) {
                 administratorToolStripMenuItem.Visible = false;
@@ -73,6 +73,14 @@ namespace eav_project {
         private void myOrdersToolStripMenuItem_Click(object sender, EventArgs e) {
             MyOrders frm = new MyOrders(userID);
             frm.ShowDialog();
+        }
+
+        private void MainPage_Load(object sender, EventArgs e) {
+
+        }
+
+        private void administratorToolStripMenuItem_MouseHover(object sender, EventArgs e) {
+            administratorToolStripMenuItem.BackColor = Color.Red;
         }
     }
 }

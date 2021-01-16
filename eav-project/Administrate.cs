@@ -28,5 +28,9 @@ namespace eav_project {
             AdminManageOrders frm = new AdminManageOrders();
             frm.ShowDialog();
         }
+
+        private void Administrate_Load(object sender, EventArgs e) {
+
+        }
     }
 }

@@ -54,18 +54,7 @@ namespace eav_project {
                     cmd.Parameters.AddWithValue("@password", txtPassword.Text);
                     cmd.Parameters.AddWithValue("@register_date", DateTime.Now.ToString("yyyy-MM-dd"));
                     cmd.Parameters.AddWithValue("@country_code", comboBox1.SelectedItem.ToString());
-                   
-
-                    //DataTable dt2 = new DataTable();
-                    //SqlDataAdapter sa2 = new SqlDataAdapter(cmd);
-                    //conn2.Open();
-                    //sa2.Fill(dt2);
-                    //conn2.Close();
-                    //sa2.Dispose();
-                    //cmd.Dispose();
-                    //conn2.Dispose();
-
-
+            
                     conn2.Open();
                     cmd.ExecuteReader();
                     conn2.Close();
@@ -91,6 +80,10 @@ namespace eav_project {
                    MessageBoxIcon.Exclamation,
                    MessageBoxDefaultButton.Button1);
             }
+        }
+
+        private void Register_Load(object sender, EventArgs e) {
+
         }
     }
 }

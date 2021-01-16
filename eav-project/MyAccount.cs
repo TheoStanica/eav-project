@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 namespace eav_project {
     public partial class MyAccount : Form {
         private int userID;
+        private string username;
         DataTable dt = new DataTable();
         public MyAccount(int userID) {
             InitializeComponent();
@@ -34,6 +35,7 @@ namespace eav_project {
             conn.Dispose();
 
             txtUsername.Text = dt.Rows[0]["user_name"].ToString();
+            username = dt.Rows[0]["user_name"].ToString();
         }
 
         private void button2_Click(object sender, EventArgs e) {
@@ -49,7 +51,7 @@ namespace eav_project {
 
                 if(txtNewPassword.Text == txtNewPasswordConfirm.Text) {
                     if (txtCurrentPassword.Text == dt.Rows[0]["user_pass"].ToString()) {
-                        if (!usernameExists(txtUsername.Text)) {
+                        if (!usernameExists(txtUsername.Text) || txtUsername.Text == username) {
                             //make update
                             SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;" + "Initial Catalog=eav-project;Integrated Security=SSPI;");
                             SqlCommand cmd = new SqlCommand("update users set user_name=@username, user_pass=@password where user_id=@userID", conn);
@@ -79,7 +81,7 @@ namespace eav_project {
             } else {
 
                 if (txtCurrentPassword.Text == dt.Rows[0]["user_pass"].ToString()) {
-                    if(!usernameExists(txtUsername.Text)) {
+                    if(!usernameExists(txtUsername.Text) || txtUsername.Text==username) {
                         //make update
                         SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;" + "Initial Catalog=eav-project;Integrated Security=SSPI;");
                         SqlCommand cmd = new SqlCommand("update users set user_name=@username where user_id=@userID" , conn);
@@ -117,6 +119,10 @@ namespace eav_project {
 
             if (finduser.Rows.Count != 0) return true;
             return false;
+        }
+
+        private void MyAccount_Load(object sender, EventArgs e) {
+
         }
     }
 }

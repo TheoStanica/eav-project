@@ -131,6 +131,10 @@ namespace eav_project {
                 LoadUsers(dataGridView1);
             }
         }
+
+        private void AdminManageUsers_Load(object sender, EventArgs e) {
+
+        }
     }
 
     

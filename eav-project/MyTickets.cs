@@ -118,5 +118,9 @@ namespace eav_project {
             SearchTicket(dataGridView1);
 
         }
+
+        private void MyTickets_Load(object sender, EventArgs e) {
+
+        }
     }
 }

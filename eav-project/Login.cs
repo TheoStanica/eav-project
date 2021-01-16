@@ -73,5 +73,9 @@ namespace eav_project {
             fm.ShowDialog();
             this.Close();
         }
+
+        private void Login_Load(object sender, EventArgs e) {
+
+        }
     }
 }

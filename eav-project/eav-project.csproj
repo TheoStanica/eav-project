@@ -134,6 +134,9 @@
     <EmbeddedResource Include="Administrate.resx">
       <DependentUpon>Administrate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminManageOrders.resx">
+      <DependentUpon>AdminManageOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminManageTickets.resx">
       <DependentUpon>AdminManageTickets.cs</DependentUpon>
     </EmbeddedResource>
